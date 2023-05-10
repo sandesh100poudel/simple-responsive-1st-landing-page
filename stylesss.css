@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+#main{
+    height:100%;
+    width:100%;
+    
+    display:flex;
+
+}
+#left{
+    height: 100%;
+    width:40%;
+    position: relative;
+    
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding:20px 30px;
+
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+    font-size:25px;
+}
+
+#lnavr a{
+    margin-right:20px;
+    text-decoration: none;
+    font-weight:500;
+    font-size:25px;
+
+}
+#lnavr  i{
+    color:blue;
+}
+
+#left #textcenter{
+   position:absolute;
+   top: 50%;
+   left:50%;
+   transform:translate(-50%,-50%)
+}
+
+#textcenter h1{
+    font-size:90px;
+    font-weight:900;
+}
+
+#textcenter p{
+    opacity:.6;
+    font-size:20px;
+    line-height:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color:black;
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+    font-size:20px;
+    font-weight:600;
+}
+
+
+#lnav a{
+    margin-left:20px;
+}
+
+
+#right{
+    height:100%;
+    width:60%;
+    background-color: purple;
+    background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#rtop{
+    width:100%;
+    height: 50%;
+    background-color: rgb(226, 226, 80);
+    display:flex;
+}
+#rtopleft{
+  width:55%;
+  height:100%;
+  /* background-color: red; */
+  background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80);
+  background-size: cover;
+  background-position:center ;
+}
+#rtopright{
+    height: 100%;
+    width:45%;
+    background-color: green;
+    background-image: url(https://images.unsplash.com/photo-1579169326371-ccb4e63f7889?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG9yYW5nZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: bottom;
+    background-size: cover;
+}
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+
+    }
+    #main #left{
+        width:100%;
+
+    }
+    #main #right{
+        width:100%;
+    }
+}
+/* above code is need to work properly and used in ever case  */
